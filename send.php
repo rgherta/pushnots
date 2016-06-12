@@ -1,7 +1,7 @@
 <?php
 
 // API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'AIzaSyC1CXiBHrD6rykdNaI5YThtXXfs-4pSvMI' );
+define( 'API_ACCESS_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' );
 
 
 $registrationIds = array( $_GET['id'] );
