@@ -1,7 +1,7 @@
 <?php
 
 // API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' );
+define( 'API_ACCESS_KEY', 'AIzaSyD9JJLNWM-wzeKa1zGUnmfR6anNB3EVpJI' );
 
 
 $registrationIds = array( $_GET['id'] );
@@ -9,20 +9,15 @@ $registrationIds = array( $_GET['id'] );
 // prep the bundle
 $msg = array
 (
-	'message' 	=> 'here is a message. message',
-	'title'		=> 'This is a title. title',
-	'subtitle'	=> 'This is a subtitle. subtitle',
-	'tickerText'	=> 'Ticker text here...Ticker text here...Ticker text here',
-	'vibrate'	=> 1,
-	'sound'		=> 1,
-	'largeIcon'	=> 'large_icon',
-	'smallIcon'	=> 'small_icon'
+	'body' 	=> 'Message Body is here \n New line is here',
+	'title'	=> 'This is my notification title',
+	'icon'		=> 'fb-icon.png'
 );
 
 $fields = array
 (
-	'registration_ids' 	=> $registrationIds,
-	'data'			=> $msg
+	'notification'	=> $msg,
+	'registration_ids' => $registrationIds	
 );
  
 $headers = array
